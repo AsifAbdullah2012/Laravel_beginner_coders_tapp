@@ -10,7 +10,7 @@
 <p>this is service from the services</p>
 <ul>
     @forelse($services as $service)
-    <li>{{ $service }}</li>
+    <li>{{ $service->name}}</li>
     @empty
     <li>No services avalable</li>
     @endforelse

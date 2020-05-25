@@ -12,13 +12,8 @@ class HelloController extends Controller
     }
     public function services()
     {
-        $services = [
-            'service from controller 1',
-            'service from controller 2',
-            'service from controller 3',
-            'service from controller 4',
-            'service from controller 5',
-        ];
+        $services = \App\Service::all();
+
         return view('services', compact('services'));
     }
 }
