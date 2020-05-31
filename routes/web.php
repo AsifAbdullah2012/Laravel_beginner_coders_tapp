@@ -20,3 +20,4 @@ Route::get('/', function () {
 Route::get('/about', 'HelloController@about');
 Route::get('/service', 'ServiceController@index');//here is the get method
 Route::post('/service', 'ServiceController@store');// here form is the post method
+Route::get('/customers', 'CustomerController@index');// here we have created a customer method
