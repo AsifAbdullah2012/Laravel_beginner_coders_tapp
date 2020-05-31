@@ -30,8 +30,11 @@ class ServiceController extends Controller
             // service with minimum of 5 and maximum of 20 characters
             // for validation rule go laravel documentation > basics > available validation rules
             ]);
+        \App\Service::create($data);
      
 
+     
+        /*
         // creating a service variable, that has the same structure of the service table
         // we will access this just like a table class with several variable
         $service = new \App\Service();// access a brand new service model
@@ -47,6 +50,8 @@ class ServiceController extends Controller
         // simply 'request' funtion will search for the name text
         //dd(request('name')); // this is used to check if we hit the proper place or not
         // we have to redirect back to the same  page after pushing the dat in the database
+
+        */
         
         return redirect()->back();
     }
