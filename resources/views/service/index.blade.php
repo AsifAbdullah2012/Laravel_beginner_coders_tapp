@@ -4,11 +4,13 @@
 <h1>this is the page from services</h1>
 <!-- here we are routing to service and the method is post so we should also change our web.php file as route-->
 <form action="/service" method="POST">
+    @csrf
     <input type="text" name="name" autocomplete="off">
     <!-- // csrf is used for security to ensure that this submit form is comming from our own server -->
-    <!-- somebody in different server can not submit to my application -->
+    <!-- somebody in different server can not submit to my application 
+    to comment : ctrl+shift+slash
+    -->
 
-    @csrf
     <button>Add Service</button>
 </form>
 
