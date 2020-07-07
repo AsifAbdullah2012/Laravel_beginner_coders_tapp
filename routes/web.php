@@ -23,3 +23,6 @@ Route::post('/service', 'ServiceController@store');// here form is the post meth
 Route::get('/customers', 'CustomerController@index');// here we have created a customer method
 Route::get('/customers/create', 'CustomerController@create');// here we have created a customer method
 Route::post('/customers', 'CustomerController@store');
+Route::get('/customers/{customer}', 'CustomerController@show');// this is a dynamic routing
+Route::get('/customers/{customer}/edit', 'CustomerController@edit');// this is a dynamic routing
+Route::patch('/customers/{customer}', 'CustomerController@update');
